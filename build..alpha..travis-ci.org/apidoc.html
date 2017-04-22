@@ -1,0 +1,120 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/lodash/lodash-webpack-plugin#readme"
+
+    >lodash-webpack-plugin (v0.11.2)</a>
+</h1>
+<h4>Smaller modular Lodash builds.</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.lodash-webpack-plugin">module lodash-webpack-plugin</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.lodash-webpack-plugin.lodash-webpack-plugin">
+            function <span class="apidocSignatureSpan"></span>lodash-webpack-plugin
+            <span class="apidocSignatureSpan">(nodeResolve, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.lodash-webpack-plugin" id="apidoc.module.lodash-webpack-plugin">module lodash-webpack-plugin</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.lodash-webpack-plugin.lodash-webpack-plugin" id="apidoc.element.lodash-webpack-plugin.lodash-webpack-plugin">
+        function <span class="apidocSignatureSpan"></span>lodash-webpack-plugin
+        <span class="apidocSignatureSpan">(nodeResolve, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Plugin(nodeResolve, options) {
+  // For Webpack.
+  if (this instanceof Plugin) {
+    return new LodashModuleReplacementPlugin(nodeResolve);
+  }
+  // For Rollup.
+  var _resolveId = nodeResolve.resolveId;
+  var resolver = new LodashModuleReplacementPlugin(options);
+  var resolve = (0, _memoize3.default)(resolver.resolve, function (_ref3) {
+    var resource = _ref3.resource;
+    return resource;
+  });
+
+  return Object.assign({}, nodeResolve, {
+    resolveId(importee, importer) {
+      return _resolveId(importee, importer).then(function (id) {
+        return resolve({ &#x27;rawRequest&#x27;: importee, &#x27;resource&#x27;: id });
+      });
+    }
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
