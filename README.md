@@ -1,6 +1,6 @@
 # npmdoc-lodash-webpack-plugin
 
-#### api documentation for  [lodash-webpack-plugin (v0.11.2)](https://github.com/lodash/lodash-webpack-plugin#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-lodash-webpack-plugin.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-lodash-webpack-plugin) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-lodash-webpack-plugin.svg)](https://travis-ci.org/npmdoc/node-npmdoc-lodash-webpack-plugin)
+#### basic api documentation for  [lodash-webpack-plugin (v0.11.2)](https://github.com/lodash/lodash-webpack-plugin#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-lodash-webpack-plugin.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-lodash-webpack-plugin) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-lodash-webpack-plugin.svg)](https://travis-ci.org/npmdoc/node-npmdoc-lodash-webpack-plugin)
 
 #### Smaller modular Lodash builds.
 
